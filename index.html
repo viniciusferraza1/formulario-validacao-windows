@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <nav class="navigation-bar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="" width="40">
+        </div>
+        <div class="recovery">
+            <h1>Recovery Password</h1>
+        </div>
+        <div class="icons">
+            <ul class="ul-nav">
+                <li>Login</li>
+                <li>About</li>
+                <li>Register</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="intro">
+        <h1>Recuperação de Conta</h1>
+        <h4>Dicas para voltar a usar sua conta:</h4>
+        <p>Se possível, responda estas perguntas a partir de um dispositivo e um local que você usou anteriormente com
+            esta
+            mesma conta</p>
+        <p>Nas páginas seguintes, responda o máximo de perguntas que conseguir <br>
+            Se voce não souber uma resposta, tente um novo palpite.</p>
+    </div>
+
+    <!-- Final dos textos iniciais -->
+
+    <!-- Inicio do formulário -->
+
+    <div class="form">
+        <div class="nome-sobrenome">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <p id="invalid-add"></p>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+            <p id="invalid-add-sobrenome"></p>
+        </div>
+
+        <p>Data de Nascimento</p>
+        <div class="birth">
+
+            <label for="day"></label>
+            <select name="day" id="day">
+                <option value="dia">Selecione o dia</option>
+            </select>
+            <label for="month"></label>
+            <select name="month" id="month">
+                <option value="select-one">Selecione o mês</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <label for="year"></label>
+            <select name="year" id="year">
+                <option value="">Selecione o ano</option>
+            </select>
+        </div>
+        <div class="country">
+            <label for="country">País da nossa filial</label>
+            <select name="country" id="country">
+                <option value="sl">Selecione a Matriz</option>
+                <option value="br">Brasil</option>
+                <option value="us">Estados Unidos</option>
+                <option value="es">Espanha</option>
+            </select>
+            <p id="sl-pais"></p>
+        </div>
+    </div>
+
+    <!-- Final do Formulário -->
+
+    <div class="go-ahead">
+        <button onclick="next()" id="next">Próximo</button>
+        <button>Voltar</button>
+    </div>
+
+
+
+    <!-- abaixo os scripts -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
